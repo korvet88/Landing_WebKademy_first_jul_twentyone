@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Gilroy";
+    background-color: #0B1D26;
+    background-image: url("./../img/bg/bg.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.header {
+    padding-top: 64px;
+}
+
+.container-wide {
+    margin: 0 auto;
+    width: 1790px;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
