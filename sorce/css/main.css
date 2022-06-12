@@ -31,6 +31,7 @@ body {
 
 .header {
     padding-top: 64px;
+    padding-bottom: 843px;
 }
 
 .nav-wrapper {
@@ -90,6 +91,12 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     text-decoration: none;
+    transition: transform 0.5s cubic-bezier(0.580, -0.015, 0.000, 1.650);
+
+}
+
+.hero:hover {
+    transform: translateY(-15%);
 }
 
 .hero-category {
@@ -128,4 +135,25 @@ body {
     color: #FFFFFF;
 }
 
-.hero-scroll {}
+.hero-scroll {
+    display: inline-block;
+    position: relative;
+    padding-right: 32px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.22;
+    color: #FFFFFF;
+}
+
+.hero-scroll:after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 24px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url('./../img/icon/arrow_downward_24px.svg');
+
+}
