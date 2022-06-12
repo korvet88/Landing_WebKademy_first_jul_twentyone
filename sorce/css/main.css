@@ -89,6 +89,7 @@ body {
     max-width: 980px;
     padding-left: 15px;
     padding-right: 15px;
+    text-decoration: none;
 }
 
 .hero-category {
@@ -121,12 +122,10 @@ body {
     font-family: 'Playfair Display', serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 88px;
+    font-size: 80px;
     line-height: 1.136;
     text-transform: capitalize;
     color: #FFFFFF;
-    
-
 }
 
 .hero-scroll {}
