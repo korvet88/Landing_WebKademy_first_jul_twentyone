@@ -27,6 +27,10 @@ body {
     justify-content: space-between;
 }
 
+.aling-center {
+    align-items: center;
+}
+
 /* HEADER */
 
 .header {
@@ -121,7 +125,6 @@ body {
     width: 72px;
     height: 2px;
     background-color: #FBD784;
-
 }
 
 .hero-title {
@@ -157,3 +160,119 @@ body {
     background-image: url('./../img/icon/arrow_downward_24px.svg');
 
 }
+
+/* MAIN */
+
+.container {
+    max-width: 1492px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+/* ARTICLE */
+
+
+.article {
+    margin-bottom: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.article:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.article-text {
+    position: relative;
+    padding-left: 150px;
+    margin-right: 114px;
+    max-width: 782px;
+}
+
+.article-text::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(-50%);
+    display: block;
+    content: attr(data-number);
+    width: 240px;
+    height: 240px;
+    font-weight: 700;
+    font-size: 240px;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.1);
+
+}
+
+.article-subtitle {
+    position: relative;
+    padding-left: 96px;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.222;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: #FBD784;
+    margin-bottom: 32px;
+}
+
+.article-subtitle:before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    content: "";
+    width: 72px;
+    height: 2px;
+    background-color: #FBD784;
+}
+
+.article-titile {
+    margin-bottom: 27px;
+    max-width: 555px;
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 1.2;
+    color: #FFFFFF;
+}
+
+.article-text p {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.77;
+    color: #FFFFFF;
+}
+
+
+.article-read-more {
+    display: inline-block;
+    position: relative;
+    padding-right: 40px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.22;
+    color: #FFFFFF;
+}
+
+.article-read-more:after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 16px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url('./../img/icon/arrow_rigth__24px.svg');
+
+}
+
+.article-image {}
