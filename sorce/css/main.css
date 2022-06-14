@@ -11,11 +11,14 @@ body {
     background-repeat: no-repeat;
     color: #fff;
 }
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
 
 /* BASE */
 .container-wide {
     margin: 0 auto;
-    width: 1790px;
+    max-width: 1790px;
     padding: 0 15px;
 }
 
@@ -39,6 +42,7 @@ body {
 .aling-center {
     align-items: center;
 }
+
 
 /* HEADER */
 
@@ -73,16 +77,39 @@ body {
 }
 
 .nav a {
+    position: relative;
     color: #fff;
     text-decoration: none;
     transition: color 0.2s ease-in;
+    padding-bottom: 5px;
+}
+
+.nav a:after {
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #FBD784;
+    opacity: 0;
+    transition: all 0.2s ease-in;
+
 }
 
 .nav a:hover {
     color: #FBD784;
 }
 
+.nav a:hover::after {
+    bottom: 0px;
+    opacity: 1;
+}
+
 .account {
+    position: relative;
+    padding-left: 30px;
     font-size: 17px;
     font-weight: 700;
     text-decoration: none;
@@ -92,6 +119,19 @@ body {
 
 .account:hover {
     color: #FBD784;
+}
+
+.account::before {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-100%);
+    width: 20px;
+    height: 20px;
+    background-image: url('./../img/icon/account.svg');
+    background-size: contain;
 }
 
 /* HERO */
@@ -261,6 +301,7 @@ body {
     font-size: 18px;
     line-height: 1.22;
     color: #FFFFFF;
+    text-decoration: none;
 }
 
 .article-read-more:after {
@@ -308,9 +349,11 @@ body {
     line-height: 1.77;
     color: rgba(255, 255, 255, 0.5);
 }
+
 .footer-nav-wrapper {
     display: flex;
 }
+
 .footer-nav-title {
     margin-bottom: 24px;
     font-weight: 700;
@@ -318,34 +361,41 @@ body {
     line-height: 1.333;
     color: #FBD784;
 }
-.footer-nav + .footer-nav {
+
+.footer-nav+.footer-nav {
     margin-left: 212px;
 }
+
 .footer-nav {
     min-width: 200px;
     font-weight: 500;
     font-size: 18px;
     line-height: 1.77;
 }
-.footer-nav ul{
+
+.footer-nav ul {
     padding: 0;
     margin: 0;
     list-style-type: none;
 }
-.footer-nav li{
+
+.footer-nav li {
     padding: 0;
     margin: 0;
     margin-bottom: 11px;
 }
+
 .footer-nav li:last-child {
     margin-bottom: 0;
 }
-.footer-nav a{
+
+.footer-nav a {
     position: relative;
     color: #FFFFFF;
     text-decoration: none;
     padding-bottom: 5px;
 }
+
 .footer-nav a:after {
     position: absolute;
     left: 0;
@@ -358,14 +408,8 @@ body {
     opacity: 0;
     transition: all 0.2s ease-in;
 }
+
 .footer-nav a:hover::after {
-    position: absolute;
-    left: 0;
     bottom: 0px;
-    display: block;
-    content: '';
-    width: 100%;
-    height: 2px;
-    background-color: #fff;
     opacity: 1;
 }
