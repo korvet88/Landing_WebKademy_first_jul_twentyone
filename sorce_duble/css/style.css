@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    background: url("../img/bg/bg.jpg");
+    background-color: #0B1D26;
+    color: #fff;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.container-wide {
+    max-width: 1790px;
+    padding: 0 15px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
