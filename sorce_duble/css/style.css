@@ -1,38 +1,109 @@
-    /* font-family: 'Playfair Display', serif; */
+/* font-family: 'Playfair Display', serif; */
 
-    body {
-        margin: 0;
-        background: url("../img/bg/bg.jpg");
-        background-color: #0B1D26;
-        color: #fff;
-        background-size: 100% auto;
-        background-repeat: no-repeat;
-    }
+body {
+    margin: 0;
+    background: url("../img/bg/bg.jpg");
+    background-color: #0B1D26;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
 
-    .container-wide {
-        max-width: 1790px;
-        margin: 0 auto;
-        padding: 0 15px;
-    }
+.container-wide {
+    max-width: 1790px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 
-    .header {
-        display: flex;
-        justify-content: space-between;
-    }
+.header-nav {
+    padding-top: 64px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 198px;
+}
 
-    .logo {
-        font-family: 'Playfair Display', serif;
-        width: 108px;
-        height: 24px;
-    }
+.logo {
+    font-family: 'Playfair Display', serif;
+    width: 108px;
+    height: 24px;
+}
 
-    .nav ul {
-        display: flex;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-    }
+.nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
-    .nav li+li {
-        margin-left: 40px;
-    }
+.nav li+li {
+    margin-left: 40px;
+}
+
+.nav a {
+    text-decoration: none;
+    transition: 0.2s ease-in;
+}
+
+.nav a:hover {
+    color: #FBD784;
+}
+
+.account {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.account a {
+    transition: 0.2s ease-in;
+}
+
+.account a:hover {
+    color: #FBD784;
+}
+
+.header-title {
+
+    max-width: 980px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.title__category {
+    position: relative;
+    padding-left: 104px;
+    color: #FBD784;
+
+}
+
+.title__category::before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    content: "";
+    width: 72px;
+    height: 2px;
+    background-color: #FBD784;
+
+
+}
+
+.title__h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 88px;
+    line-height: 114%;
+    text-transform: capitalize
+}
+
+.title__scroll {
+    position: relative;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+}
+.title__scroll::after {
+
+}
