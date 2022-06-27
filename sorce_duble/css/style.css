@@ -92,18 +92,53 @@ body {
 
 .title__h1 {
     font-family: 'Playfair Display', serif;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 88px;
     line-height: 114%;
-    text-transform: capitalize
+    text-transform: capitalize;
+    text-decoration: none;
+    margin-bottom: 34px;
 }
 
 .title__scroll {
+    display: inline-block;
+    padding-right: 32px;
     position: relative;
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
 }
+
 .title__scroll::after {
+    position: absolute;
+    display: block;
+    content: "";
+    right: 0;
+    top: 50%;
+    width: 16px;
+    height: 24px;
+    transform: translateY(-50%);
+    background-image: url("../img/icon/arrow_down.svg");
+}
+
+/* MAIN */
+.container {
+    max-width: 1492px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
 
 }
+
+.article {}
+
+.article-text {}
+
+.article-subtitle {}
+
+.article-title {}
+
+.article-read-more {}
+
+.article-img {}
