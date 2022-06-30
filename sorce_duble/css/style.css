@@ -222,4 +222,29 @@ body {
     transform: translateY(-50%);
 }
 
-.article-img {}
+.article-img {
+    display: block;
+}
+
+/* FOOTER  */
+.footer {}
+
+.container {}
+
+.footer-copirigth {}
+
+.footer-logo {}
+
+.header__logo {}
+
+.f-logo {}
+
+.footer-title {}
+
+.footer-description {}
+
+.footer-nav {}
+
+.footer-nav-list {}
+
+.footer-nav-title {}
