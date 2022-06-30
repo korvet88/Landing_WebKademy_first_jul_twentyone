@@ -20,6 +20,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding-bottom: 198px;
+
 }
 
 .logo {
@@ -133,15 +134,21 @@ body {
 /* ARTICLE */
 .article {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 200px;
+}
 
+.article:nth-child(even) {
+    flex-direction: row-reverse;
 }
 
 .article-text {
     position: relative;
-    margin-right: 114px;
-    max-width: 632px;
+    padding-left: 150px;
+    max-width: 782px;
     top: 0;
-    transform: translateY(25%);
+
 }
 
 .article-text::before {
@@ -180,6 +187,7 @@ body {
 
 .article-title {
     font-family: 'Playfair Display', serif;
+    max-width: 555px;
     font-style: normal;
     font-weight: 600;
     font-size: 64px;
@@ -188,6 +196,7 @@ body {
 }
 
 .article-text p {
+    max-width: 632px;
     font-weight: 700;
     font-size: 18px;
     line-height: 32px;
