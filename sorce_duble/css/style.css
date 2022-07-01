@@ -49,9 +49,24 @@ body {
     color: #FBD784;
 }
 
-.account {
+.header__account {
+    position: relative;
     font-size: 17px;
     font-weight: 700;
+    padding-left: 32px;
+}
+
+.header__account::before {
+    display: block;
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon/account.svg");
+    height: 24px;
+    width: 24px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: #fff;
 }
 
 .account a {
@@ -63,7 +78,6 @@ body {
 }
 
 .header-title {
-
     max-width: 980px;
     padding-left: 15px;
     padding-right: 15px;
@@ -227,24 +241,73 @@ body {
 }
 
 /* FOOTER  */
-.footer {}
+.footer {
+    max-height: 280px;
 
-.container {}
+}
 
-.footer-copirigth {}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
 
-.footer-logo {}
+.footer-copirigth {
+    display: flex;
+    flex-direction: column;
 
-.header__logo {}
+}
 
-.f-logo {}
+.footer-logo {
+    margin-bottom: 24px;
+}
 
-.footer-title {}
+.footer-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    max-width: 303px;
+    margin-bottom: 122px;
+}
 
-.footer-description {}
+.footer-description {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: auto;
+}
 
-.footer-nav {}
+.footer-nav {
+    display: flex;
+}
 
 .footer-nav-list {}
 
-.footer-nav-title {}
+.footer-nav-list+.footer-nav-list {
+    margin-left: 212px;
+
+}
+
+.footer-nav-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FBD784;
+    margin-bottom: 24px;
+}
+
+.footer-nav-list ul {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-nav-list li {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 16px;
+}
+
+.footer-nav-list li:last-child {
+    margin-bottom: 0;
+}
