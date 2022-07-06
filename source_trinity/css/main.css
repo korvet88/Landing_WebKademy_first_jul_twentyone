@@ -25,6 +25,7 @@ body {
     padding-top: 64px;
     height: 25px;
     align-items: center;
+    margin-bottom: 198px;
 }
 
 .header__logo {
@@ -68,7 +69,25 @@ body {
     transform: translateY(-50%);
     width: 24px;
     height: 24px;
-
     background-image: url("../img/icon/account.svg");
     color: #fff;
 }
+
+/* MAIN */
+.header__description {
+    display: block;
+
+}
+
+.header__about {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: #FBD784;
+}
+
+.header__h1 {}
+
+.header__scroll {}
